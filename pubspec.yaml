@@ -1,0 +1,44 @@
+name: mediportal
+description: Application medicale de gestion de patients et dossiers medicaux
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  supabase_flutter: ^2.6.0
+  intl: ^0.19.0
+  table_calendar: ^3.1.2
+  file_picker: ^8.0.0
+  path_provider: ^2.1.2
+  pdf: ^3.10.0
+  printing: ^5.12.0
+  url_launcher: ^6.2.5
+  image_picker: ^1.0.0
+  cached_network_image: ^3.3.0
+  flutter_svg: ^2.0.0
+  google_fonts: ^6.2.0
+  share_plus: ^7.2.2
+  
+  # NOUVEAU : Pour télécharger le PDF dans le dossier Downloads
+  file_saver: ^0.2.14
+  
+  # NOUVEAU : Pour demander les permissions de stockage (Android)
+  permission_handler: ^11.3.1
+  
+  # NOUVEAU : Pour ouvrir le PDF après téléchargement
+  open_file: ^3.5.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/image_app_medical.jpg
+    - assets/images/medicine.png
